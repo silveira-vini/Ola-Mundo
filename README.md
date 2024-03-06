@@ -4,3 +4,5 @@
  Repositório criado durante uma aula do Curso em Vídeo.
 
  Essa linha eu adicionei diretamente no site github.
+
+ Agora estou aprendendo *linguagem* **Markdown.**
