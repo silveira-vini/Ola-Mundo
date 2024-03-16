@@ -1,3 +1,6 @@
+// Explicação do exercício: 
+// https://www.youtube.com/watch?v=h0sNAXE1ozo&t=305
+
 function bestRockBand(band) {
     return new Promise((resolve, reject) => {
         if (band == 'Queen') {
@@ -26,12 +29,15 @@ function bestRockSong(response) {
 }
 
 async function doTheJob() {
-    
-    const bestRockBandResponse = await bestRockBand('Queen');
-    console.log(bestRockBandResponse);
-    const bestRockSongResponse = await bestRockSong(bestRockBandResponse);
-    console.log(bestRockSongResponse);
-    
+    try {
+        const bestRockBandResponse = await bestRockBand('Kiss');
+        console.log(bestRockBandResponse);
+        const bestRockSongResponse = await bestRockSong(bestRockBandResponse);
+        console.log(bestRockSongResponse);
+    } catch (err) {
+        console.log(err);
+        console.log(err.msg);
+    }
 }
 
 doTheJob();
