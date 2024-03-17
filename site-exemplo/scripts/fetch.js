@@ -7,16 +7,18 @@ function converter() {
     
     fetch(url)
         .then((res) => {
-            console.log(res);
+            
             return res.json();
         
         })
         .then( (data) => {
-            console.log(data);
+            
+                       
             let valueDollar = data.USDBRL.ask;
-            console.log(valueDollar);
-            let display = document.getElementById("resultado");
-            resu
+            
+            
+            let convertion = valor * valueDollar;
+            console.log(convertion)
 
 
         })
