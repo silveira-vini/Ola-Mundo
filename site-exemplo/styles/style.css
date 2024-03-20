@@ -1,23 +1,25 @@
-@keyframes changeBox {
-    0% {background-color: red;}
-    25% {background-color: gray; width: 300px;}
-    50% {background-color: yellow; width: 400px;}
-    90% {background-color: blue; width: 150px;}
-    100% {background-color: red;}
+body {
+    text-align: center;
+}
+
+.btn {
+    width: 75px;
+    height: 50px;
+    border: 1px solid gray;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 1px 1px 1px gray;
+    transition: all;
+    transition-duration: 200ms;
+
 
 }
 
-
-
-.box {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    animation-name: changeBox;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    /* animation-iteration-count: infinite; */
-    animation-direction: alternate;
-    animation-fill-mode: both;
+.btn:hover {
+    background-color: blue;
+    width: 80px;
+    font-size: 1em;
+    box-shadow: 3px 3px 3px gray;
 
 }
