@@ -30,3 +30,11 @@ const gradesAll2 = [grades1, grades2];
 
 console.log(gradesAll);
 console.log(gradesAll2);
+
+for (let i = 0; i < 10; i++) {
+
+    function gray() {
+        
+    }
+
+}

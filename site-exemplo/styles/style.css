@@ -14,12 +14,14 @@ body {
     transition-duration: 200ms;
 
 
+
 }
 
 .btn:hover {
     background-color: blue;
     width: 80px;
     font-size: 1em;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px rgb(180, 167, 167);
+    
 
 }

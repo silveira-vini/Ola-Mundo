@@ -11,4 +11,3 @@ console.log(nome);
 } 
 
 console.log("Boa noite, apesar do erro acima")
-
