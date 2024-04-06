@@ -17,7 +17,7 @@ function arredondar (nota) {
 
 classificaAluno(100)
 classificaAluno(30)
-classificaAluno(38)
+classificaAluno(37.5)
 classificaAluno(88)
 classificaAluno(61)
 
