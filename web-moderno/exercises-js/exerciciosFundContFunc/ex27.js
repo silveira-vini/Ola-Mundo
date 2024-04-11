@@ -10,22 +10,33 @@ function dadosCriancas(alturaCrianca1, alturaCrianca2, txCrianca1, txCrianca2) {
 
     // Separando as alturas iguais e diferentes
     if (alturaCrianca1 != alturaCrianca2) {
+            // se criança1 for maior
+        if (alturaCrianca1 > alturaCrianca2) {
 
-        let tempo = 0
-        while (alturaCrianca1 > alturaCrianca2) {
-            alturaCrianca1 *= txCrianca1
-            alturaCrianca2 *= txCrianca2
-            tempo++
+            let tempo = 0
+            while (alturaCrianca1 > alturaCrianca2) {
+                alturaCrianca1 *= txCrianca1
+                alturaCrianca2 *= txCrianca2
+                tempo++
+            }
+            console.log(`Em ${tempo} meses passará de altura`)
+            console.log(`Criança1 medindo ${parseInt(alturaCrianca1)} e Criança2 medindo ${parseInt(alturaCrianca2)}`)
+
+            // se criança2 for maior
+        } else {
+            let tempo = 0
+            while (alturaCrianca2 > alturaCrianca1) {
+                alturaCrianca1 *= txCrianca1
+                alturaCrianca2 *= txCrianca2
+                tempo++
+            }
+            console.log(`Em ${tempo} meses passará de altura`)
+            console.log(`Criança1 medindo ${parseInt(alturaCrianca1)} e Criança2 medindo ${parseInt(alturaCrianca2)}`)
         }
-        console.log(parseInt(alturaCrianca1), parseInt(alturaCrianca2))
-        console.log(`Em ${tempo} meses passará de altura`)
-
-
     } else {
         console.log('Mesma Altura')
     }
 }
 
-
-dadosCriancas(120, 100, 1.1, 1.15)
+dadosCriancas(100, 120, 1.15, 1.1)
 
