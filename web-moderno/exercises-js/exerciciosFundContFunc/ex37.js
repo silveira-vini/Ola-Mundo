@@ -1,14 +1,26 @@
 function pAritimetica(n, a1, r) {
     let aN = a1 + (n - 1) * r
-    let termos = [aN]
+    let termos = []
 
-    for (let i = 0; i <= aN; i + r){
-        console.log(i)
+    for (let i = a1; i <= aN; i += r){
+        termos.push(i)
     }
-
-
+    return termos
+        
 }
 
+function soma(termos) {
+    let soma = 0
+    termos.forEach(element => { 
+        soma = soma + element
+    });
 
+    return soma
+}
 
-pAritimetica(7, 3, 2)
+let n = 12
+let a1 = 3
+let r = 5
+
+console.log(pAritimetica(n, a1, r))
+console.log(`A soma dos termos dessa PA é ${soma(pAritimetica(n, a1, r))}`)
