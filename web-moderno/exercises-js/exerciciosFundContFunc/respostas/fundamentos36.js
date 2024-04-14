@@ -1,19 +1,19 @@
 let vetor = [1, 2, 3, 4, 5]
 
-function multiplicaVetor(vetor, multiplicador){
+function multiplicaVetor(vetor, multiplicador) {
     let vetorResultado1 = []
     vetor.forEach(elemento => {
-        vetorResultado1.push(elemento * multiplicador) 
+        vetorResultado1.push(elemento * multiplicador)
     });
 
     return vetorResultado1
 }
 
-function multiplicaVetorSeMaiorQue5(vetor, multiplicador){
+function multiplicaVetorSeMaiorQue5(vetor, multiplicador) {
     let vetorResultado2 = []
-    if(multiplicador < 5) return
+    if (multiplicador < 5) return
     vetor.forEach(elemento => {
-        vetorResultado2.push(elemento * multiplicador) 
+        vetorResultado2.push(elemento * multiplicador)
     });
 
     return vetorResultado2
